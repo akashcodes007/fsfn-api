@@ -12,9 +12,6 @@ RUN apk add --no-cache python3 alpine-sdk
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
     pnpm install --prod --frozen-lockfile
 
-# Remove incorrect package filter
-RUN pnpm deploy --prod /app/prod/api
-
 FROM base AS api
 WORKDIR /app
 
