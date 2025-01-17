@@ -11,7 +11,7 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.17.1",
-    "@imput/version-info": "^1.0.0"  // Add this if it is needed
+    "@imput/version-info": "^1.0.0" 
   },
-  "type": "module"  // Add this line
+  "type": "module"
 }
