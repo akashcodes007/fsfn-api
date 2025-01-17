@@ -9,6 +9,8 @@ COPY . /app
 RUN corepack enable
 RUN apk add --no-cache python3 alpine-sdk
 
+RUN pnpm add dotenv 
+
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
     pnpm install --prod --frozen-lockfile
 
