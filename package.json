@@ -6,7 +6,8 @@
     "pnpm": ">=9"
   },
   "scripts": {
-    "start": "node src/cobalt.js"
+    "start": "node src/cobalt.js",
+    "predeploy": "pnpm install --no-frozen-lockfile"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
